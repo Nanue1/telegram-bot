@@ -812,6 +812,7 @@ pub struct Sticker {
 /// This object represents a video file.
 #[derive(Debug, Clone, PartialEq, PartialOrd, Deserialize)]
 pub struct Video {
+    pub file_unique_id: String,
     /// Unique identifier for this file.
     pub file_id: String,
     /// Video width as defined by sender.
